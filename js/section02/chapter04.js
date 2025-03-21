@@ -25,7 +25,8 @@ funcA(...arr1);
 //-> Rest는 나머지, 나머지 매개변수
 
 function funcB(one,two,...rest){ //한방에 모든 인수 받아올 수 있음 배열형태로
-    //Spread 연산자가 아니라 rest 매개변수임
+    //Spread 연산자가 아니라 rest 매개변수임 꼭 rest가 아니라 이름 딴거 써도됨
+    //rest 뒤에는 추가적으로 매개변수 선언할 수 없음. 앞에는 가능
     console.log(rest);
 
 }
