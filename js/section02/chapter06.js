@@ -33,7 +33,7 @@ for(let key of keys){
 }
 
 //2.2 Object.values
-//-> 객체에서 value 값들만 뽑아서 새롱ㄴ 배열로 반환
+//-> 객체에서 value 값들만 뽑아서 새로운 배열로 반환
 let values = Object.values(person);
 
 for(let value of values){
