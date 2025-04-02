@@ -1,14 +1,15 @@
-// const Button = ({text, color = "black"}) => {
-//     return ( 
-//         <button style={{color: color}}>
-//         {text} - {color.toUpperCase()}
-//         </button>
-//     );
-// };
+const Button = ({text, color = "black", children, }) => {
+    //이벤트 객체
+    const onClickButton = (e) => {
+        console.log(e);
+        console.log(text);
+    };
 
-const Button = ({children, text, color = "black"}) => {
     return ( 
-        <button style={{color: color}}>
+        <button
+        onClick={onClickButton}  //()쓰지말고 함수 이름만 적어야함
+        // onMouseEnter={onClickButton}
+        style={{color: color}}>
         {text} - {color.toUpperCase()}
         {children}
         </button>
